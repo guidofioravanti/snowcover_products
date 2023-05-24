@@ -32,7 +32,7 @@ The Normalized Difference Snow Index (NDSI) snow cover is an index that is relat
 
 ## References
 
-- [Let-It-Snow](file:///E:/fioragu/Downloads/ATBD_CES-Neige.pdf)
+- [Let-It-Snow](https://zenodo.org/record/1414452#.ZG3MHKVBxaQ)
 
 - Riggs, George A., Dorothy K. Hall, and Miguel O. Román. 2015. VIIRS Snow Cover Algorithm Theoretical Basis Document.
 
