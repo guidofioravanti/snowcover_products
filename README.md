@@ -35,7 +35,7 @@ NDSI introduced by Jeff Dozier (Rem. Sens. Env., 1989)
 
 ## Slope-corrected surface reflectances 
 
-Did I tell you that mountain regions are quite sloping? The slope correction enables to use the same detection thresholds in south-facing and north-facing slopes.[See this page for more info](https://labo.obs-mip.fr/multitemp/let-it-snow-development-of-an-operational-snow-cover-product-from-sentinel-2-and-landsat-8-data/)
+Did I tell you that mountain regions are quite sloping? The slope correction enables to use the same detection thresholds in south-facing and north-facing slopes. [See this page for more info](https://labo.obs-mip.fr/multitemp/let-it-snow-development-of-an-operational-snow-cover-product-from-sentinel-2-and-landsat-8-data/)
 
 ## References
 
