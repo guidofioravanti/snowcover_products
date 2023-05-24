@@ -18,12 +18,13 @@ The snow surface is quite straightforward to detect from high resolution optical
 
 Most of the algorithms are based on the normalized-difference snow index (NDSI) and a digital elevation model
 
-### Let-It-SNOW
+### Let-It-Snow 
 
-### Let-It-Snow (revision)
+This algorithm is desscribed in Richiardi et al. (2021). The algorithm (Let-It-Snow revision) improves the discrimination between snow and cloud objects.
 
-This algorithm is desscribed in Richiardi et al. (2021). The algorithm improves the discrimination between snow and cloud objects.
-
+| | LIS | LIS revision |
+| |-----|--------------|
+| preprocessing | MAJA algorithm (Lonjou et al., 2016) for both atmospheric/topographic correction and cloud mask extraction | Fmask algorithm and Sen2Cor processor |
 
 ## Notes
 
@@ -49,6 +50,8 @@ Did I tell you that mountain regions are quite sloping? The slope correction ena
 - [Let-It-Snow](https://zenodo.org/record/1414452#.ZG3MHKVBxaQ)
 
 - Dozier, J. 1989. Spectral signature of alpine snow cover from the landsat thematic mapper. [Available here](https://www.sciencedirect.com/science/article/abs/pii/0034425789901016)
+
+-  Lonjou, V.; Desjardins, C.; Hagolle, O.; Petrucci, B.; Tremas, T.; Dejus, M.; Makarau, A.; Auer, S. [MACCS-ATCOR joint algorithm (MAJA)](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10001/1/MACCS-ATCOR-joint-algorithm-MAJA/10.1117/12.2240935.short?SSO=1). Remote Sens. Clouds Atmos. XXI 2016, 10001, 1000107
 
 - Richiardi, C. et al., 2021. A Revised Snow Cover Algorithm to Improve Discrimination between Snow and Clouds: A Case Study in Gran Paradiso National Park. Remote Sensing. (Available here)[https://www.mdpi.com/2072-4292/13/10/1957}
 
