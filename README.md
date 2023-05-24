@@ -24,18 +24,27 @@ LIS is based on the Normalized Difference Snow Index (NDSI).
 
 This algorithm is described in Richiardi et al. (2021) and developed by Gascoin et al. (2018). The algorithm (Let-It-Snow revision) improves the discrimination between snow and cloud objects.
 
-| | LIS | LIS revision |
+| | LIS | LIS revision (rLIS) |
 |-|-----|--------------|
 | preprocessing | MAJA algorithm (Lonjou et al., 2016) for both atmospheric/topographic correction and cloud mask extraction | Fmask algorithm and Sen2Cor processor |
 |  subsequent processing phase | | New parameter, based on the reflectance in the SWIR, to better discriminate snow from clouds |
 | | The original algorithm adopts a band down-sampling technique | Reduction of red-band noise is achieved by smoothing its values through a mean moving window |
 | | The original LIS algorithm produces no output when restrictive threshold values are used for the NDSI, red band, and SWIR band, and a low amount of snow pixels are found (with respect to a defined quantitative threshold) | Regardless of the amount of snow detected, the proposed algorithm produces an output map |
 
-LIS revision:
+LIS revision (rLIS):
 
 - Fmask v4 for cloud detection (The cloud probability threshold was set to 40%, and the dilation parameters for clouds, cloud shadows, and snow were set to 1, 1, and 0 pixels, respectively).
 -
 -  The S2 L1C images were atmospherically and topographically corrected through Sen2Cor v2.5.5, using a high-resolution DEM, in order to improve the correction performance, thus obtaining the S2 Level 2A images.
+
+#### Input data
+
+An S2 L2A flattened surface bottom-of-atmosphere, in particular the green (band 3); red (band 4), and SWIR (band 11) bands.
+
+| Bands |	Green |	Red	| SWIR |
+|-------|-------|-----|------|
+|Sentinel-2|	Band 3 (10 m, 0.560 µm) |	Band 4 (10 m, 0.665 µm) |	Band 11 (20 m, 1.610 µm) |
+
 
 ## Notes
 
