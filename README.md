@@ -49,6 +49,28 @@ LIS revision (rLIS):
 
 3) A Digital Elevation Model
 
+#### Steps
+
+1) DEM to S2 L2A spatial resolution
+
+2) Calculate the NDSI, from the atmospheric and topographically corrected green and SWIR bands at 20 m resolution, as:
+
+```
+NDSI =green − SWIRgreen + SWIR
+```
+3) Search for possible snow-covered areas under "dark clouds" (thin and transparent clouds).
+
+  - “cloud pass 1”: search for dark clouds among all the pixels classified as clouds by Fmask, excluding only the pixels classified a priori as cloud shadows
+    -  The “dark clouds” can be identified through use of a threshold, rD, which is applied to the red band after reducing its noise through an average 3 × 3 moving window filter
+    -  "dark clouds": pixels flagged as clouds in the Fmask cloud mask that respond in the red band with a signal greater than rD. Dark clouds are temporarily removed from the cloud mask, and are investigated for the possible presence of snow with the rest of the image. The pixels of the cloud with the red band reflectance lower than rD are excluded from further investigations.
+  
+  - "snow pass 1": the snow cover is identified by applying restrictive thresholds in order to minimize false snow detection. A pixel is classified as snow if the following conditions are fulfilled:
+    - NDSI > n1
+    - red band > r1
+    - SWIR band < s1  
+  -  if the snow detected in the entire image is greater than the threshold ft (see Table 3), the algorithm proceeds with the calculation of the snowline elevation; otherwise, it stops.
+
+
 ## Notes
 
 ### Fmask v4 
