@@ -1,6 +1,6 @@
 # snowcover_products
 
-Discriminating cloud and snow pixels is the challenging part in snow cover mapping. 
+The snow surface is quite straightforward to detect from high resolution optical imagery. Discriminating cloud and snow pixels is the challenging part in snow cover mapping. 
 
 ## Potential products for snowcover
 
