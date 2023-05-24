@@ -32,6 +32,8 @@ The Normalized Difference Snow Index (NDSI) snow cover is an index that is relat
 
 NDSI introduced by Jeff Dozier (Rem. Sens. Env., 1989) 
 
+:smiley: See [this useful page](https://labo.obs-mip.fr/multitemp/let-it-snow-development-of-an-operational-snow-cover-product-from-sentinel-2-and-landsat-8-data/).
+
 
 ## Slope-corrected surface reflectances 
 
