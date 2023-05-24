@@ -20,7 +20,9 @@ Most of the algorithms are based on the normalized-difference snow index (NDSI) 
 
 ### Let-It-Snow 
 
-This algorithm is desscribed in Richiardi et al. (2021) and developed by Gascoin et al. (2018). The algorithm (Let-It-Snow revision) improves the discrimination between snow and cloud objects.
+LIS is based on the Normalized Difference Snow Index (NDSI).
+
+This algorithm is described in Richiardi et al. (2021) and developed by Gascoin et al. (2018). The algorithm (Let-It-Snow revision) improves the discrimination between snow and cloud objects.
 
 | | LIS | LIS revision |
 |-|-----|--------------|
