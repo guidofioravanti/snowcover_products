@@ -29,11 +29,22 @@ This algorithm is desscribed in Richiardi et al. (2021). The algorithm (Let-It-S
 | | The original algorithm adopts a band down-sampling technique | Reduction of red-band noise is achieved by smoothing its values through a mean moving window |
 | | The original LIS algorithm produces no output when restrictive threshold values are used for the NDSI, red band, and SWIR band, and a low amount of snow pixels are found (with respect to a defined quantitative threshold) | Regardless of the amount of snow detected, the proposed algorithm produces an output map |
 
+LIS revision:
+
+- Fmask v4 for cloud detection (The cloud probability threshold was set to 40%, and the dilation parameters for clouds, cloud shadows, and snow were set to 1, 1, and 0 pixels, respectively).
+-
+-  The S2 L1C images were atmospherically and topographically corrected through Sen2Cor v2.5.5, using a high-resolution DEM, in order to improve the correction performance, thus obtaining the S2 Level 2A images.
+
 ## Notes
 
-### EUMETSAT
+### Fmask v4 
 
-More snow-cover products from EUMETSAT: [available here](https://hsaf.meteoam.it/Products/ProductsList?type=snow)
+Software for automated cloud, cloud shadow, snow, and water masking for Landsat 4–8 and Sentinel 2 images. Fmask has been distributed for both Windows and Linux, including standalone versions with or without a graphical user interface (GUI).
+
+### MAJA (MACCS-ATCOR Joint Algorithm)
+
+A multi-temporal cloud detection and topographic/atmospheric correction software package produced through the joint effort of CNES, CESBIO, and DLR.
+
 
 ### NDSI
 
@@ -51,6 +62,8 @@ Did I tell you that mountain regions are quite sloping? The slope correction ena
 ## References
 
 - [Let-It-Snow](https://zenodo.org/record/1414452#.ZG3MHKVBxaQ)
+
+- More snow-cover products from EUMETSAT: [available here](https://hsaf.meteoam.it/Products/ProductsList?type=snow)
 
 - Dozier, J. 1989. Spectral signature of alpine snow cover from the landsat thematic mapper. [Available here](https://www.sciencedirect.com/science/article/abs/pii/0034425789901016)
 
