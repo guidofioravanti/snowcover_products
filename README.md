@@ -30,6 +30,10 @@ More snow-cover products from EUMETSAT: [available here](https://hsaf.meteoam.it
 
 The Normalized Difference Snow Index (NDSI) snow cover is an index that is related to the presence of snow in a pixel and is a more accurate description of snow detection as compared to Fractional Snow Cover (FSC). Snow typically has very high visible (VIS) reflectance and very low reflectance in the shortwave infrared (SWIR), a characteristic used to detect snow by distinguishing between snow and most cloud types. Snow cover is detected using the NDSI ratio of the difference in VIS and SWIR reflectance; NDSI = ((band 4-band 6) / (band 4 + band 6)). A pixel with NDSI > 0.0 is considered to have some snow present. A pixel with NDSI <= 0.0 is a snow free land surface (Riggs et al., 2016).   
 
+## Slope-corrected surface reflectances 
+
+Did I tell you that mountain regions are quite sloping? The slope correction enables to use the same detection thresholds in south-facing and north-facing slopes.[source here](https://labo.obs-mip.fr/multitemp/let-it-snow-development-of-an-operational-snow-cover-product-from-sentinel-2-and-landsat-8-data/)
+
 ## References
 
 - [Let-It-Snow](https://zenodo.org/record/1414452#.ZG3MHKVBxaQ)
