@@ -18,6 +18,11 @@ The snow surface is quite straightforward to detect from high resolution optical
 
 Most of the algorithms are based on the normalized-difference snow index (NDSI) and a digital elevation model
 
+### Let-It-SNOW
+
+### Let-It-Snow (revision)
+
+This algorithm is desscribed in Richiardi et al. (2021). The algorithm improves the discrimination between snow and cloud objects.
 
 
 ## Notes
@@ -44,5 +49,7 @@ Did I tell you that mountain regions are quite sloping? The slope correction ena
 - [Let-It-Snow](https://zenodo.org/record/1414452#.ZG3MHKVBxaQ)
 
 - Dozier, J. 1989. Spectral signature of alpine snow cover from the landsat thematic mapper. [Available here](https://www.sciencedirect.com/science/article/abs/pii/0034425789901016)
+
+- Richiardi, C. et al., 2021. A Revised Snow Cover Algorithm to Improve Discrimination between Snow and Clouds: A Case Study in Gran Paradiso National Park. Remote Sensing. (Available here)[https://www.mdpi.com/2072-4292/13/10/1957}
 
 
