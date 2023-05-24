@@ -25,6 +25,9 @@ This algorithm is desscribed in Richiardi et al. (2021). The algorithm (Let-It-S
 | | LIS | LIS revision |
 |-|-----|--------------|
 | preprocessing | MAJA algorithm (Lonjou et al., 2016) for both atmospheric/topographic correction and cloud mask extraction | Fmask algorithm and Sen2Cor processor |
+|  subsequent processing phase | | New parameter, based on the reflectance in the SWIR, to better discriminate snow from clouds |
+| | The original algorithm adopts a band down-sampling technique | Reduction of red-band noise is achieved by smoothing its values through a mean moving window |
+| | The original LIS algorithm produces no output when restrictive threshold values are used for the NDSI, red band, and SWIR band, and a low amount of snow pixels are found (with respect to a defined quantitative threshold) | Regardless of the amount of snow detected, the proposed algorithm produces an output map |
 
 ## Notes
 
