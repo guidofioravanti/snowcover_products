@@ -20,7 +20,7 @@ Most of the algorithms are based on the normalized-difference snow index (NDSI) 
 
 ### Let-It-Snow 
 
-This algorithm is desscribed in Richiardi et al. (2021). The algorithm (Let-It-Snow revision) improves the discrimination between snow and cloud objects.
+This algorithm is desscribed in Richiardi et al. (2021) and developed by Gascoin et al. (2018). The algorithm (Let-It-Snow revision) improves the discrimination between snow and cloud objects.
 
 | | LIS | LIS revision |
 |-|-----|--------------|
@@ -66,6 +66,8 @@ Did I tell you that mountain regions are quite sloping? The slope correction ena
 - More snow-cover products from EUMETSAT: [available here](https://hsaf.meteoam.it/Products/ProductsList?type=snow)
 
 - Dozier, J. 1989. Spectral signature of alpine snow cover from the landsat thematic mapper. [Available here](https://www.sciencedirect.com/science/article/abs/pii/0034425789901016)
+
+- Gascoin, S.; Grizonnet, M.; Klempka, T.; Salgues, G. Theia Land Data Centre Algorithm Theoritical Basis Documentation for an Operational Snow Cover Extent Product from Sentinel-2 and Landsat-8 Data (Let-It-Snow). 2018. [Available online](https://zenodo.org/record/1414452)
 
 -  Lonjou, V.; Desjardins, C.; Hagolle, O.; Petrucci, B.; Tremas, T.; Dejus, M.; Makarau, A.; Auer, S. [MACCS-ATCOR joint algorithm (MAJA)](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10001/1/MACCS-ATCOR-joint-algorithm-MAJA/10.1117/12.2240935.short?SSO=1). Remote Sens. Clouds Atmos. XXI 2016, 10001, 1000107
 
