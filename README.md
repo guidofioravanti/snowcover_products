@@ -68,7 +68,22 @@ NDSI =green − SWIRgreen + SWIR
     - NDSI > n1
     - red band > r1
     - SWIR band < s1  
-  -  if the snow detected in the entire image is greater than the threshold ft (see Table 3), the algorithm proceeds with the calculation of the snowline elevation; otherwise, it stops.
+  -  if the snow detected in the entire image is greater than the threshold ft, the algorithm proceeds with the calculation of the snowline elevation; otherwise, it stops
+  -  When the image is almost or totally cloudy, ft is not overcome and, therefore, the most restrictive step (i.e., “snow pass 1”) is maintained while the less restrictive one (i.e., “snow pass 2”) is skipped, in order to lower the likelihood of confusion between clouds and snow. 
+  -  identify the snowline elevation:
+    - calculating the percentage of snow present for each 100 m (dz) altitude band, with respect to the percentage of pixels free from clouds (fct), thus establishing the altitude limit below which the chance of snow is zero.
+    - The snowline elevation (zs) is defined as two altitudinal bands below the minimum identified band (dmin) in which the snow that is present is greater than the threshold fs: zs = dmin − 2 · dz  
+  - "snow pass 2": performe snow detection a second time, using less restrictive thresholds and introducing the previously identified altitude limit, zs.
+    - a pixel is classified as snow if it meets the following conditions:
+      - NDSI > n2;
+      - red band > r2;
+      - SWIR band < s2;
+      - elevation > zs. 
+      
+- pixels that meet the conditions described above are now classified as snow. The remaining dark cloud pixels will return clouds (if they respond in the red band with a reflectance greater than the threshold rB) or are classified as “No snow,” otherwise.  
+- reclassify “No snow” pixel clusters smaller than 5 pixels (equal to 2000 m2), based on the values of the neighboring cells, in order to eliminate any unreliable pixels from the final mask.
+- **final output**: a 20 m resolution raster mask (Figure 5) following the LIS classification: 0, No snow; 100, Snow; 205, Cloud; 254, No Data.
+ 
 
 
 ## Notes
