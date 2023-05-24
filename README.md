@@ -23,7 +23,7 @@ Most of the algorithms are based on the normalized-difference snow index (NDSI) 
 This algorithm is desscribed in Richiardi et al. (2021). The algorithm (Let-It-Snow revision) improves the discrimination between snow and cloud objects.
 
 | | LIS | LIS revision |
-| |-----|--------------|
+|-|-----|--------------|
 | preprocessing | MAJA algorithm (Lonjou et al., 2016) for both atmospheric/topographic correction and cloud mask extraction | Fmask algorithm and Sen2Cor processor |
 
 ## Notes
